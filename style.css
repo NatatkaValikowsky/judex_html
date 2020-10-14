@@ -118,10 +118,41 @@ body {
   background-image: url(./static/icon-insta.svg); }
 
 .socials__shedule {
-  font-size: 17px; }
+  font-size: 17px;
+  padding-left: 30px;
+  position: relative; }
+
+.socials__shedule:before {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-image: url(./static/icon-clock.svg);
+  position: absolute;
+  top: 50%;
+  margin-top: -10px;
+  left: 0;
+  background-repeat: no-repeat;
+  background-position: center; }
 
 .socials__location {
-  font-size: 17px; }
+  font-size: 17px;
+  padding-left: 30px;
+  position: relative; }
+
+.socials__location:before {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-image: url(./static/icon-map.svg);
+  background-size: contain;
+  position: absolute;
+  top: 50%;
+  margin-top: -10px;
+  left: 0;
+  background-repeat: no-repeat;
+  background-position: center; }
 
 .header__contacts-header {
   display: none;
