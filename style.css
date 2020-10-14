@@ -198,9 +198,6 @@ body {
   background-position: center;
   color: white;
   padding: 30px 0; }
-  @media (min-width: 1120px) {
-    .offer-section {
-      padding-bottom: 100px; } }
 
 .offer-section__offer {
   padding: 230px 20px 0 20px;
@@ -226,7 +223,8 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  list-style: none; }
+  list-style: none;
+  color: black; }
   @media (min-width: 768px) {
     .advantages {
       flex-direction: row;
@@ -235,7 +233,7 @@ body {
   @media (min-width: 1120px) {
     .advantages {
       position: relative;
-      top: -100px; } }
+      bottom: -150px; } }
 
 .advantages__item {
   width: 300px;
@@ -252,7 +250,8 @@ body {
 
 @media (min-width: 1120px) {
   .about {
-    display: flex; } }
+    display: flex;
+    margin-top: 100px; } }
 
 .about__popular-services {
   display: flex;
