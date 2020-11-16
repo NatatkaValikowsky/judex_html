@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1,minimum-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Сайт юридической компании Judex</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 <link href="style.css" rel="stylesheet"></head>
 <body>
   <header class="header">
@@ -341,9 +342,68 @@
           </li>
         </ul>
       </section>
+
+      <section class="send-callback">
+        <div class="send-callback__body">
+          <h2 class="send-callback__title">
+            Оставьте заявку на консультацию
+          </h2>
+
+          <form class="send-callback__form">
+            <input class="send-callback__field" type="text" placeholder="Ваше имя">
+            <input class="send-callback__field" type="text" placeholder="Ваш номер телефона">
+            <button class="btn btn--goal-btn" type="submit">Оставить заявку</button>
+          </form>
+        </div>
+      </section>
+
+      <section class="recalls">
+        <h2 class="section-title section__title">
+          Наши отзывы
+        </h2>
+
+        <div class="swiper-container swiper-recalls">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide recall-item">
+              <p class="recall-item__text">
+                Я обратилась в компанию “Judex” со своим вопросом и не надеялась уже, что мне помогут. Но юристы компании потрясли меня своим профессионализмом и решили все мои проблемы.
+              </p>
+              <div class="recall-item__author">
+                <img class="recall-item__photo" src="./src/img/main-page/recalls/001.png" alt="">
+                <span class="recall-item__name">Ирина Иванова</span>
+              </div>
+            </div>
+
+            <div class="swiper-slide recall-item">
+              <p class="recall-item__text">
+                Я обратилась в компанию “Judex” со своим вопросом и не надеялась уже, что мне помогут. Но юристы компании потрясли меня своим профессионализмом и решили все мои проблемы.
+              </p>
+              <div class="recall-item__author">
+                <img class="recall-item__photo" src="./src/img/main-page/recalls/001.png" alt="">
+                <span class="recall-item__name">Ирина Иванова</span>
+              </div>
+            </div>
+
+          </div>
+          
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+      </section>
     </div>
+    
 
 
   </main>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper('.swiper-recalls', {
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  </script>
 <script type="text/javascript" src="./js/bundle.js"></script></body>
 </html>
